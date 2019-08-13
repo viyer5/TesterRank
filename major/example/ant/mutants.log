@@ -1,0 +1,53 @@
+1:STD:<ASSIGN>:<NO-OP>:triangle.SampleStack@<init>():11:intStack = new ArrayList<Integer>() |==> <NO-OP>
+2:STD:<ASSIGN>:<NO-OP>:triangle.SampleStack@<init>():12:size = 0 |==> <NO-OP>
+3:STD:<CALL>:<NO-OP>:triangle.SampleStack@push(int):16:intStack.add(x) |==> <NO-OP>
+4:STD:<INC>:<NO-OP>:triangle.SampleStack@push(int):17:size++ |==> <NO-OP>
+5:ROR:==(int,int):<=(int,int):triangle.SampleStack@peek():21:this.getSize() == 0 |==> this.getSize() <= 0
+6:ROR:==(int,int):>=(int,int):triangle.SampleStack@peek():21:this.getSize() == 0 |==> this.getSize() >= 0
+7:ROR:==(int,int):FALSE(int,int):triangle.SampleStack@peek():21:this.getSize() == 0 |==> false
+8:STD:<RETURN>:<NO-OP>:triangle.SampleStack@peek():22:return -200; |==> <NO-OP>
+9:AOR:-(int,int):%(int,int):triangle.SampleStack@peek():24:size - 1 |==> size % 1
+10:AOR:-(int,int):*(int,int):triangle.SampleStack@peek():24:size - 1 |==> size * 1
+11:AOR:-(int,int):+(int,int):triangle.SampleStack@peek():24:size - 1 |==> size + 1
+12:AOR:-(int,int):/(int,int):triangle.SampleStack@peek():24:size - 1 |==> size / 1
+13:ROR:>(int,int):!=(int,int):triangle.SampleStack@pop():28:size > 0 |==> size != 0
+14:ROR:>(int,int):>=(int,int):triangle.SampleStack@pop():28:size > 0 |==> size >= 0
+15:ROR:>(int,int):FALSE(int,int):triangle.SampleStack@pop():28:size > 0 |==> false
+16:AOR:-(int,int):%(int,int):triangle.SampleStack@pop():29:size - 1 |==> size % 1
+17:AOR:-(int,int):*(int,int):triangle.SampleStack@pop():29:size - 1 |==> size * 1
+18:AOR:-(int,int):+(int,int):triangle.SampleStack@pop():29:size - 1 |==> size + 1
+19:AOR:-(int,int):/(int,int):triangle.SampleStack@pop():29:size - 1 |==> size / 1
+20:STD:<DEC>:<NO-OP>:triangle.SampleStack@pop():30:size-- |==> <NO-OP>
+21:STD:<CALL>:<NO-OP>:triangle.SampleStack@pop():33:System.out.println("Stack is empty") |==> <NO-OP>
+22:ROR:==(int,int):<=(int,int):triangle.SampleStack@empty():39:size == 0 |==> size <= 0
+23:ROR:==(int,int):>=(int,int):triangle.SampleStack@empty():39:size == 0 |==> size >= 0
+24:ROR:==(int,int):FALSE(int,int):triangle.SampleStack@empty():39:size == 0 |==> false
+25:STD:<ASSIGN>:<NO-OP>:triangle.SampleStack@search(int):44:temp = this |==> <NO-OP>
+26:ROR:==(int,int):<=(int,int):triangle.SampleStack@search(int):47:ele == element |==> ele <= element
+27:ROR:==(int,int):>=(int,int):triangle.SampleStack@search(int):47:ele == element |==> ele >= element
+28:ROR:==(int,int):FALSE(int,int):triangle.SampleStack@search(int):47:ele == element |==> false
+29:STD:<RETURN>:<NO-OP>:triangle.SampleStack@search(int):48:return true; |==> <NO-OP>
+30:ROR:!=(int,int):<(int,int):triangle.SampleStack@equals(triangle.SampleStack):56:other.getSize() != this.size |==> other.getSize() < this.size
+31:ROR:!=(int,int):>(int,int):triangle.SampleStack@equals(triangle.SampleStack):56:other.getSize() != this.size |==> other.getSize() > this.size
+32:ROR:!=(int,int):TRUE(int,int):triangle.SampleStack@equals(triangle.SampleStack):56:other.getSize() != this.size |==> true
+33:STD:<RETURN>:<NO-OP>:triangle.SampleStack@equals(triangle.SampleStack):57:return false; |==> <NO-OP>
+34:ROR:<(int,int):!=(int,int):triangle.SampleStack@equals(triangle.SampleStack):59:i < other.getSize() |==> i != other.getSize()
+35:ROR:<(int,int):<=(int,int):triangle.SampleStack@equals(triangle.SampleStack):59:i < other.getSize() |==> i <= other.getSize()
+36:ROR:<(int,int):FALSE(int,int):triangle.SampleStack@equals(triangle.SampleStack):59:i < other.getSize() |==> false
+37:ROR:==(int,int):<=(int,int):triangle.SampleStack@equals(triangle.SampleStack):62:element1 == element2 |==> element1 <= element2
+38:ROR:==(int,int):>=(int,int):triangle.SampleStack@equals(triangle.SampleStack):62:element1 == element2 |==> element1 >= element2
+39:ROR:==(int,int):FALSE(int,int):triangle.SampleStack@equals(triangle.SampleStack):62:element1 == element2 |==> false
+40:STD:<ASSIGN>:<NO-OP>:triangle.SampleStack@equals(triangle.SampleStack):63:equal = true |==> <NO-OP>
+41:AOR:-(int,int):%(int,int):triangle.SampleStack@printStack():76:size - 1 |==> size % 1
+42:AOR:-(int,int):*(int,int):triangle.SampleStack@printStack():76:size - 1 |==> size * 1
+43:AOR:-(int,int):+(int,int):triangle.SampleStack@printStack():76:size - 1 |==> size + 1
+44:AOR:-(int,int):/(int,int):triangle.SampleStack@printStack():76:size - 1 |==> size / 1
+45:ROR:>=(int,int):==(int,int):triangle.SampleStack@printStack():76:i >= 0 |==> i == 0
+46:ROR:>=(int,int):>(int,int):triangle.SampleStack@printStack():76:i >= 0 |==> i > 0
+47:ROR:>=(int,int):TRUE(int,int):triangle.SampleStack@printStack():76:i >= 0 |==> true
+48:STD:<CALL>:<NO-OP>:triangle.SampleStack@printStack():77:System.out.println(intStack.get(i)) |==> <NO-OP>
+49:STD:<CALL>:<NO-OP>:triangle.SampleStack@main(java.lang.String[]):83:s.push(1) |==> <NO-OP>
+50:STD:<CALL>:<NO-OP>:triangle.SampleStack@main(java.lang.String[]):84:s.push(2) |==> <NO-OP>
+51:STD:<CALL>:<NO-OP>:triangle.SampleStack@main(java.lang.String[]):85:s.push(3) |==> <NO-OP>
+52:STD:<CALL>:<NO-OP>:triangle.SampleStack@main(java.lang.String[]):86:s.push(4) |==> <NO-OP>
+53:STD:<CALL>:<NO-OP>:triangle.SampleStack@main(java.lang.String[]):88:s.printStack() |==> <NO-OP>

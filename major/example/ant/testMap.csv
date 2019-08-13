@@ -1,0 +1,10 @@
+TestNo,TestName
+1,triangle.test.TestSuite[equals]
+2,triangle.test.TestSuite[search]
+3,triangle.test.TestSuite[pop]
+4,triangle.test.TestSuite[peek]
+5,triangle.test.TestSuite[pop2]
+6,triangle.test.TestSuite[push]
+7,triangle.test.TestSuite[empty]
+8,triangle.test.TestSuite[peek2]
+9,triangle.test.TestSuite[empty2]
